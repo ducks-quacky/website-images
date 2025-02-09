@@ -20,14 +20,14 @@ images.forEach(image => {
 
     // Open popup on click
     imgElement.addEventListener("click", () => {
-        popup.style.display = "flex";
+        popup.classList.add("show-popup");
         popupImg.src = imgElement.src;
     });
 
     gallery.appendChild(imgElement);
 });
 
-// Close popup when clicking the X
+// Close popup function
 function closePopup() {
-    popup.style.display = "none";
+    popup.classList.remove("show-popup");
 }
