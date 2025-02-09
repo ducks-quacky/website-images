@@ -1,21 +1,21 @@
-// Function to open the modal and display the clicked image
-function openModal(imageSrc) {
-    const modal = document.getElementById("myModal");
-    const modalImg = document.getElementById("modalImg");
-    modal.style.display = "block";
-    modalImg.src = imageSrc;
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.getElementById('gallery');
+    const imagePaths = [
+        'path/to/duck1.jpg',
+        'path/to/duck2.jpg',
+        'path/to/duck3.jpg',
+        // Add more image paths as needed
+    ];
 
-// Function to close the modal
-function closeModal() {
-    const modal = document.getElementById("myModal");
-    modal.style.display = "none";
-}
+    imagePaths.forEach(path => {
+        const imgContainer = document.createElement('div');
+        imgContainer.className = 'duck-image';
 
-// Close the modal if the user clicks outside the image
-window.onclick = function (event) {
-    const modal = document.getElementById("myModal");
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-};
+        const img = document.createElement('img');
+        img.src = path;
+        img.alt = 'Duck Image';
+
+        imgContainer.appendChild(img);
+        gallery.appendChild(imgContainer);
+    });
+});
