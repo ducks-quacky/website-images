@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const gallery = document.getElementById('gallery');
     const imagePaths = [
-        'path/to/duck1.jpg',
+        'path/to/image1.avif',
         'path/to/duck2.jpg',
         'path/to/duck3.jpg',
         // Add more image paths as needed
