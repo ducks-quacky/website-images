@@ -9,24 +9,21 @@
 <body>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="images/image1.avif" alt="Image 1" onclick="openLightbox('images/image1.avif')">
+            <img src="image1.jpg" alt="Image 1" onclick="openModal('image1.jpg')">
         </div>
         <div class="gallery-item">
-            <img src="images/image2.png" alt="Image 2" onclick="openLightbox('images/image2.png')">
+            <img src="image2.jpg" alt="Image 2" onclick="openModal('image2.jpg')">
         </div>
         <div class="gallery-item">
-            <img src="images/image3.jpg" alt="Image 3" onclick="openLightbox('images/image3.jpg')">
-        </div>
-        <div class="gallery-item">
-            <img src="images/image4.jpeg" alt="Image 4" onclick="openLightbox('images/image4.jpeg')">
+            <img src="image3.jpg" alt="Image 3" onclick="openModal('image3.jpg')">
         </div>
         <!-- Add more images as needed -->
     </div>
 
-    <!-- Lightbox Overlay -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <span class="close">&times;</span>
-        <img id="lightbox-img" class="lightbox-content">
+    <!-- Modal for full-screen image -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
     </div>
 
     <script src="script.js"></script>
