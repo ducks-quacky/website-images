@@ -9,18 +9,26 @@
 <body>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="images/image1.avif" alt="Image 1">
+            <img src="images/image1.avif" alt="Image 1" onclick="openLightbox('images/image1.avif')">
         </div>
         <div class="gallery-item">
-            <img src="images/image2.png" alt="Image 2">
+            <img src="images/image2.png" alt="Image 2" onclick="openLightbox('images/image2.png')">
         </div>
         <div class="gallery-item">
-            <img src="images/image3.jpg" alt="Image 3">
+            <img src="images/image3.jpg" alt="Image 3" onclick="openLightbox('images/image3.jpg')">
         </div>
         <div class="gallery-item">
-            <img src="images/image4.jpeg" alt="Image 4">
+            <img src="images/image4.jpeg" alt="Image 4" onclick="openLightbox('images/image4.jpeg')">
         </div>
         <!-- Add more images as needed -->
     </div>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
