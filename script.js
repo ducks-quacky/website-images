@@ -12,7 +12,7 @@ const gallery = document.getElementById("gallery");
 // Loop through images and add them to the gallery
 images.forEach(image => {
     const imgElement = document.createElement("img");
-    imgElement.src = `images/${image}`; // Path to images folder
+    imgElement.src = `/images/${image}`; // Path to images folder
     imgElement.alt = "Gallery Image";
     imgElement.classList.add("gallery-img");
     gallery.appendChild(imgElement);
