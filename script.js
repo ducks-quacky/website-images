@@ -1,6 +1,6 @@
 // List of image file names (Manually added)
 const images = [
-    "image1.jpg",
+    "image1.avif",
     "image2.jpg",
     "image3.jpg",
     "image4.jpg"
